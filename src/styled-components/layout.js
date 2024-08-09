@@ -64,6 +64,49 @@ export const ImageLayer = styled(Image)`
   object-fit: cover;
 `;
 
+export const SliderContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  max-width: 1700px;
+  position: relative;
+  margin: 0 auto;
+`;
+
+export const ImageSlider = styled(Image)`
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  max-width: 1700px;
+  display: block;
+  margin: 0 auto;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, #2b2b2b 100%);
+  object-fit: cover;
+`;
+
+export const CarouselText = styled.h3`
+  font-size: ${({ theme }) => theme.sizes.fontExtraLargePlus};
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  line-height: 1.2;
+  opacity: 0.9;
+  color: ${({ theme }) => theme.colors.white};
+  strong {
+    font-weight: 800;
+    color: ${({ theme }) => theme.colors.radiant};
+  }
+`;
+
+export const SliderItem = styled.div`
+  position: relative;
+`;
+
 export const HeroText = styled.h1`
   font-size: ${({ theme }) => theme.sizes.fontExtraLarge};
   font-weight: 500;

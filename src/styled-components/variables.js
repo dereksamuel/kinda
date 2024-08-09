@@ -18,6 +18,7 @@ const variables = {
       fontMedium: "1rem",
       fontLarge: "2rem",
       fontExtraLarge: "2.5rem",
+      fontExtraLargePlus: "3rem"
     },
     fonts: {
       primary: "Poppins",
