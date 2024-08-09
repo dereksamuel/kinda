@@ -1,5 +1,10 @@
-import "@/styles/globals.css";
+import "@/assets/fonts/stylesheet.css";
+import GeneralStyles from "@/styled-components";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <GeneralStyles>
+      <Component {...pageProps} />
+    </GeneralStyles>
+  );
 }
