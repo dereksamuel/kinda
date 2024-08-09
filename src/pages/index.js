@@ -1,5 +1,6 @@
 import Menu from "@/components/Menu";
 import ImageHero from "@/components/Home/ImageHero";
+import KnowMore from "@/components/Home/KnowMore";
 import { Separator } from "@/styled-components/layout";
 
 import MainImage from "@/assets/images/Home/MainImage.png";
@@ -15,6 +16,8 @@ export default function Home() {
       <ImageHero src={MainImage} alt="logo" />
       <Separator $right />
       <SimpleSlider />
+      <Separator />
+      <KnowMore />
     </>
   );
 }

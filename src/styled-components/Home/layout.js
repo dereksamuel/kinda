@@ -123,3 +123,16 @@ export const HeroText = styled.h1`
     color: ${({ theme }) => theme.colors.radiant};
   }
 `;
+
+export const KnowMoreContainer = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(${({ $src }) => $src.src}) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  max-height: 600px;
+  max-width: 1700px;
+  margin: 0 auto;
+`;
