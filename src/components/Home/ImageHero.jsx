@@ -1,4 +1,4 @@
-import { ImageLayer, HeroText, ImageHeroContainer } from "@/styled-components/layout";
+import { ImageLayer, HeroText, ImageHeroContainer } from "@/styled-components/Home/layout";
 
 const ImageHero = ({ src, alt }) => {
   return (

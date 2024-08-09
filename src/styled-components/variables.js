@@ -16,6 +16,7 @@ const variables = {
       large: "4rem",
       fontSmall: "0.5rem",
       fontMedium: "1rem",
+      fontML: "1.5rem",
       fontLarge: "2rem",
       fontExtraLarge: "2.5rem",
       fontExtraLargePlus: "3rem"
