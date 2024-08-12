@@ -94,7 +94,7 @@ export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: ${({ theme }) => theme.sizes.medium};
+    padding-left: ${({ theme }) => theme.sizes.medium};
 
     ul {
       list-color: ${({ theme }) => theme.colors.secondaryMistery};
@@ -140,4 +140,19 @@ export const CardsContainer = styled.div`
   .box:last-child {
     border-right: none;
   }
+`;
+
+export const ImgStepsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(${({ $src }) => $src.src}) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px;
+  max-height: 600px;
+  max-width: 1700px;
+  margin: 0 auto;
+  position: relative;
 `;
