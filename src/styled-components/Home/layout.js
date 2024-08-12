@@ -113,6 +113,15 @@ export const SliderItem = styled.div`
   position: relative;
 `;
 
+export const SliderContainerClients = styled.div`
+  width: 100%;
+  height: fit-content;
+  max-height: 600px;
+  max-width: 1100px;
+  position: relative;
+  margin: 0 auto;
+`;
+
 export const HeroText = styled.h1`
   font-size: ${({ theme }) => theme.sizes.fontExtraLarge};
   font-weight: 600;
@@ -131,8 +140,8 @@ export const OurClientsContainer = styled.section`
   background: url(${({ $src }) => $src.src}) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 800px;
-  max-height: 600px;
+  height: 530px;
+  max-height: 530px;
   max-width: 1700px;
   margin: 0 auto;
 `;
@@ -142,7 +151,7 @@ export const TitleContainerClient = styled.div`
   text-align: center;
   padding-top: ${({ theme }) => theme.sizes.large};
   padding-bottom: ${({ theme }) => theme.sizes.large};
-  max-width: 420px;
+  max-width: 430px;
   margin: 0 auto;
 
   h3 {
@@ -211,4 +220,15 @@ export const KnowMoreContainer = styled.section`
       color: ${({ theme }) => theme.colors.primary};
     }
   }
+`;
+
+export const PartnersContainer = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  max-height: 600px;
+  max-width: 1700px;
+  margin: 0 auto;
+  background-color: ${({ theme }) => theme.colors.black};
 `;
