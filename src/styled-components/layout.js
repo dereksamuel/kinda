@@ -23,10 +23,15 @@ export const MenuList = styled.ul`
 export const MenuItem = styled.li`
   font-size: ${({ theme }) => theme.sizes.fontMedium};
   font-weight: 500;
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.primary};
   padding: ${({ theme }) => `0 ${theme.sizes.medium}`};
   border-right: 2px solid ${({ theme }) => theme.colors.secondary};
+
+  a {
+    cursor: ${({ $active }) => $active ? "default" : "pointer"};
+    text-decoration: none;
+    font-weight: ${({ $active }) => $active ? "700" : "500"};
+    color: ${({ theme, $active, $variant }) => $active ? theme.colors[$variant] : theme.colors.primary};
+  }
 
   &:last-child {
     border-right: none;

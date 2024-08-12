@@ -1,9 +1,7 @@
-import Menu from "@/components/Menu";
 import ImageHero from "@/components/Home/ImageHero";
 import KnowMore from "@/components/Home/KnowMore";
 import OurClients from "@/components/Home/OurClients";
 import Partners from "@/components/Home/Partners";
-import Footer from "@/components/Footer";
 import { Separator } from "@/styled-components/layout";
 
 import MainImage from "@/assets/images/Home/MainImage.png";
@@ -15,7 +13,6 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   return (
     <>
-      <Menu />
       <ImageHero src={MainImage} alt="logo" />
       <Separator $right />
       <SimpleSlider />
@@ -24,7 +21,6 @@ export default function Home() {
       <OurClients />
       <Separator $right />
       <Partners />
-      <Footer />
     </>
   );
 }
