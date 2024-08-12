@@ -8,7 +8,23 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
     font-family: ${variables.theme.fonts.primary};
+  }
+
+  body::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
   }
 
   .slick-dots {

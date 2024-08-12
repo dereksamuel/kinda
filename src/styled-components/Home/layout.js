@@ -226,9 +226,29 @@ export const PartnersContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  max-height: 600px;
+  background: url(${({ $src }) => $src.src}) no-repeat;
+  background-size: 1050px;
+  background-position: bottom;
   max-width: 1700px;
   margin: 0 auto;
-  background-color: ${({ theme }) => theme.colors.black};
+  padding-bottom: 375px;
+
+  .container-border-blue {
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 3px solid ${({ theme }) => theme.colors.radiant};
+    padding: 25px 50px;
+    font-size: ${({ theme }) => theme.sizes.fontML};
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.primary};
+    margin-top: ${({ theme }) => theme.sizes.large};
+
+    p:nth-child(1) {
+      margin-bottom: ${({ theme }) => theme.sizes.small};
+    }
+
+    strong {
+      color: ${({ theme }) => theme.colors.radiant};
+    }
+  }
 `;

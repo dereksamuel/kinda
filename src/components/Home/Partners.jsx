@@ -5,8 +5,11 @@ import Image from "next/image";
 
 const Partners = () => {
   return (
-    <PartnersContainer>
-      <Image src={PartnersSrc} alt="partners" width={1250} height={420} />
+    <PartnersContainer $src={PartnersSrc}>
+      <div className="container-border-blue">
+        <p>Integramos los microservicios de <strong>AWS</strong> y el motor de turnos en la región, <strong>Debmedia.</strong></p>
+        <p>Optimiza y potencia la experiencia de tus clientes integrando canales físicos y digitales.</p>
+      </div>
     </PartnersContainer>
   );
 };

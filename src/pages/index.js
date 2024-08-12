@@ -3,6 +3,7 @@ import ImageHero from "@/components/Home/ImageHero";
 import KnowMore from "@/components/Home/KnowMore";
 import OurClients from "@/components/Home/OurClients";
 import Partners from "@/components/Home/Partners";
+import Footer from "@/components/Footer";
 import { Separator } from "@/styled-components/layout";
 
 import MainImage from "@/assets/images/Home/MainImage.png";
@@ -23,6 +24,7 @@ export default function Home() {
       <OurClients />
       <Separator $right />
       <Partners />
+      <Footer />
     </>
   );
 }

@@ -11,6 +11,7 @@ export const MainHeader = styled.header`
   align-items: center;
   padding: ${({ theme }) => theme.sizes.small} ${({ theme }) => theme.sizes.medium};
   background-color: ${({ theme }) => theme.colors.white};
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
 
 export const MenuList = styled.ul`
@@ -59,4 +60,38 @@ export const MainFooter = styled.footer`
   padding: ${({ theme }) => theme.sizes.medium} ${({ theme }) => theme.sizes.large};
   margin-top: ${({ theme }) => theme.sizes.medium};
   background-color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const FooterContainer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  padding: ${({ theme }) => theme.sizes.large} ${({ theme }) => theme.sizes.small};
+`;
+
+export const BlueFooterContainer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1700px;
+  width: 100%;
+  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.primary};
+  padding: ${({ theme }) => theme.sizes.small};
+`;
+
+export const Links = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: ${({ theme }) => theme.sizes.medium};
+  width: 100%;
+  padding: ${({ theme }) => theme.sizes.small};
+  font-size: ${({ theme }) => theme.sizes.fontMedium};
 `;
