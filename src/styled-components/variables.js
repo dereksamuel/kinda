@@ -19,7 +19,8 @@ const variables = {
       fontML: "1.5rem",
       fontLarge: "2rem",
       fontExtraLarge: "2.5rem",
-      fontExtraLargePlus: "3rem"
+      fontExtraLargePlus: "3rem",
+      fontExtraLargePlusMore: "4rem"
     },
     fonts: {
       primary: "Poppins",

@@ -15,10 +15,10 @@ export const ModuleHeroContainer = styled.section`
 
   h3 {
     color: ${({ theme }) => theme.colors.secondaryMistery};
-    font-size: ${({ theme }) => theme.sizes.fontExtraLargePlus};
+    font-size: ${({ theme }) => theme.sizes.fontExtraLargePlusMore};
     position: absolute;
-    top: 150px;
-    left: 55%;
+    top: 120px;
+    left: 58%;
     transform: translateX(-50%);
   }
 `;
