@@ -1,6 +1,7 @@
 import Menu from "@/components/Menu";
 import ImageHero from "@/components/Home/ImageHero";
 import KnowMore from "@/components/Home/KnowMore";
+import OurClients from "@/components/Home/OurClients";
 import { Separator } from "@/styled-components/layout";
 
 import MainImage from "@/assets/images/Home/MainImage.png";
@@ -18,6 +19,7 @@ export default function Home() {
       <SimpleSlider />
       <Separator />
       <KnowMore />
+      <OurClients />
     </>
   );
 }

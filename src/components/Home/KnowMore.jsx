@@ -1,13 +1,15 @@
 import { KnowMoreContainer } from "@/styled-components/Home/layout";
 
 import KnowMoreImage from "@/assets/images/Home/KnowMoreBg.png";
+import { Button } from "@/styled-components/inputOutput";
 
 const KnowMore = () => {
   return (
     <KnowMoreContainer $src={KnowMoreImage}>
       <div className="boxcontent">
-        <h1>MIDE, CONTROLA Y DISMINUYE</h1>
+        <h3>MIDE, CONTROLA Y DISMINUYE</h3>
         <p>tiempos de espera y atención a pacientes, además <strong>aumenta</strong> los tiempos de utilización de recursos de las instituciones.</p>
+        <Button variant="white">Descubre más</Button>
       </div>
     </KnowMoreContainer>
   );

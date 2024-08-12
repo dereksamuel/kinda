@@ -3,10 +3,11 @@ import styled from "styled-components";
 const chooseColorBtn = ($variant) => {
   const colors = {
     primary: "radiant",
-    secondary: "black"
+    secondary: "black",
+    white: "radiant"
   };
 
-  return colors[$variant] || "black";
+  return colors[$variant] || "radiant";
 }
 
 export const Button = styled.button`
