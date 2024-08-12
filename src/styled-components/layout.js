@@ -84,6 +84,33 @@ export const BlueFooterContainer = styled.footer`
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.primary};
   padding: ${({ theme }) => theme.sizes.small};
+
+  .box-footer:last-child {
+    border-left: 1px solid ${({ theme }) => theme.colors.radiant};
+    list-style: none;
+  }
+
+  .box-footer {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: ${({ theme }) => theme.sizes.small};
+
+    p {
+      padding-right: ${({ theme }) => theme.sizes.small};
+    }
+    li {
+      list-style: none;
+      display: flex;
+      strong {
+        color: ${({ theme }) => theme.colors.radiant};
+        margin-right: ${({ theme }) => theme.sizes.small};
+        font-weight: 600;
+      }
+    }
+  }
 `;
 
 export const Links = styled.div`

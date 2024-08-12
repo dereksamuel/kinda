@@ -24,7 +24,24 @@ const Footer = () => {
         </Links>
         <p>© 2024 Kinda Salud</p>
       </FooterContainer>
-      <BlueFooterContainer></BlueFooterContainer>
+      <BlueFooterContainer>
+        <div className="box-footer">
+          <p><strong>Teléfono</strong></p>
+          <ul className="list">
+            <li><strong>Colombia:</strong> +57 (1) 236 0488</li>
+            <li><strong>Perú:</strong> +51 981 515 131 / +51 1 368 5167</li>
+            <li><strong>USA:</strong> +57 313 853 5694</li>
+          </ul>
+        </div>
+        <div className="box-footer">
+          <p><strong>Dirección</strong></p>
+          <ul className="list">
+            <li><strong>Colombia:</strong> Calle 97Bis 19-20 Oficina 602, Bogotá.</li>
+            <li><strong>Perú:</strong> Jr. Cruz del Sur 140 - 154, Oficina 907, Surco, Lima.</li>
+            <li><strong>USA:</strong> 5599 W Crossville Rd Suite 125, Roswell, GA.</li>
+          </ul>
+        </div>
+      </BlueFooterContainer>
     </>
   );
 };
