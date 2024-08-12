@@ -47,6 +47,11 @@ const SimpleSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    pauseOnDotsHover: true,
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />

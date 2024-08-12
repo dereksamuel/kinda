@@ -14,12 +14,12 @@ export default function Home() {
   return (
     <>
       <ImageHero src={MainImage} alt="logo" />
-      <Separator $right />
+      <Separator $right $variant="radiant" />
       <SimpleSlider />
-      <Separator />
+      <Separator $variant="radiant" />
       <KnowMore />
       <OurClients />
-      <Separator $right />
+      <Separator $variant="radiant" $right />
       <Partners />
     </>
   );

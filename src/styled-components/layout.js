@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+const chooseRadiantSep = ($variant) => {
+  switch ($variant) {
+    case "primary":
+      return "white";
+    case "secondaryMistery":
+      return "primary";
+    default:
+      return "white";
+  }
+};
+
 export const MainHeader = styled.header`
   display: flex;
   position: sticky;
@@ -46,14 +57,14 @@ export const Separator = styled.div`
   margin: 0 auto;
   opacity: 0.98;
   margin-top: -8px;
-  background-color: ${({ theme, $right }) => theme.colors[$right ? "radiant" : "white"]};
+  background-color: ${({ theme, $right, $variant }) => theme.colors[$right ? $variant : chooseRadiantSep($variant)]};
 
   &::before {
     content: "";
     display: block;
     width: 50%;
     height: 100%;
-    background-color: ${({ theme, $right }) => theme.colors[$right ? "white" : "radiant"]};
+    background-color: ${({ theme, $right, $variant }) => theme.colors[$right ? chooseRadiantSep($variant) : $variant ]};
   }
 `;
 
