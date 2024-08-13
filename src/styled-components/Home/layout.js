@@ -192,7 +192,7 @@ export const KnowMoreContainer = styled.section`
   background-size: cover;
   background-position: center;
   height: 800px;
-  max-height: 600px;
+  max-height: 700px;
   max-width: 1700px;
   margin: 0 auto;
   background-attachment: fixed;

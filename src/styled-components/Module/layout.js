@@ -90,7 +90,7 @@ export const CardContainer = styled.div`
     height: 250px;
     border-radius: 50%;
     background-color: ${({ theme }) => theme.colors.secondary};
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,7 @@ export const CardsContainer = styled.div`
 
 export const ImgStepsContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background: url(${({ $src }) => $src.src}) no-repeat;
   background-size: cover;
@@ -155,4 +155,61 @@ export const ImgStepsContainer = styled.div`
   max-width: 1700px;
   margin: 0 auto;
   position: relative;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-right: ${({ theme }) => theme.sizes.medium};
+  }
+
+  small {
+    font-size: ${({ theme }) => theme.sizes.fontSM};
+    color: ${({ theme }) => theme.colors.white};
+    margin-top: -10px;
+    display: block;
+    margin-bottom: ${({ theme }) => theme.sizes.small};
+  }
+
+  small.isSecondarySmall {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  h3 {
+    font-size: ${({ theme }) => theme.sizes.fontExtraLargePlus};
+    color: ${({ theme }) => theme.colors.secondaryMistery};
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 600px;
+    gap: ${({ theme }) => theme.sizes.medium};
+    color: ${({ theme }) => theme.colors.white};
+    font-weight: 300;
+
+    strong {
+      font-weight: 600;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: ${({ theme }) => theme.sizes.fontSmall}
+    }
+
+    .number {
+      font-size: ${({ theme }) => theme.sizes.fontExtraLargePlus};
+      color: ${({ theme }) => theme.colors.secondaryMistery};
+      font-weight: 700;
+    }
+  }
+
+  ul.secondary {
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `;
