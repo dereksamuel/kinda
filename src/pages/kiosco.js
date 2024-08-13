@@ -1,4 +1,6 @@
+import MainKioscoHero from "@/components/Kiosco/MainKioscoHero";
 import { Separator } from "@/styled-components/layout";
+import CardsKioskos from "@/components/Kiosco/CardsKioskos";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,7 +8,11 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Kiosco() {
   return (
     <>
-      <Separator $right $variant="secondaryMistery" />
+      <MainKioscoHero />
+      <Separator $left $variant="secondaryRadiant" />
+      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", alignItems: "center" }}>
+        <CardsKioskos />
+      </div>
     </>
   );
 }

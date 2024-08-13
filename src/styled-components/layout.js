@@ -6,6 +6,8 @@ const chooseRadiantSep = ($variant) => {
       return "white";
     case "secondaryMistery":
       return "primary";
+    case "secondaryRadiant":
+      return "primary";
     default:
       return "white";
   }

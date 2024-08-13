@@ -33,16 +33,24 @@ export const ModuleHeroContainer = styled.section`
     color: ${({ theme }) => theme.colors.primary};
     font-size: ${({ theme }) => theme.sizes.fontMedium};
     position: absolute;
-    bottom: ${({ theme }) => theme.sizes.large};
+    bottom: ${({ theme }) => theme.sizes.ml};
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .kioscos {
+    color: ${({ theme }) => theme.colors.secondaryRadiant};
+  }
+
+  .k-desc {
+    text-align: center;
   }
 `;
 
 export const CardContainer = styled.div`
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: ${({ $rect }) => $rect ? '400px' : '300px'};
   perspective: 1000px;
 
   .flip-card-inner {
@@ -66,7 +74,7 @@ export const CardContainer = styled.div`
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 50%;
+    border-radius: ${({ $rect }) => $rect ? '0' : '50%'};
   }
 
   .flip-card-front {
@@ -87,8 +95,8 @@ export const CardContainer = styled.div`
 
   .circle {
     width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    height: ${({ $rect }) => $rect ? '400px' : '250px'};
+    border-radius: ${({ $rect }) => $rect ? '0' : '50%'};
     background-color: ${({ theme }) => theme.colors.secondary};
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -130,6 +138,8 @@ export const CardsContainer = styled.div`
   }
 
   .Title {
+    max-width: 400px;
+    line-height: 1;
     margin: 0;
     margin-bottom: ${({ theme }) => theme.sizes.small};
     text-align: center;

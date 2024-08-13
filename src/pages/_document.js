@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <title>Kinda</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/Smile.png" />
       <body>
         <Main />
         <NextScript />

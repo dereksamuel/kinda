@@ -5,7 +5,7 @@ const ImgSteps = ({ src, children, isSecondary }) => {
     <ImgStepsContainer $src={src}>
       <div className="content">
         <h3 className="Title">TURNOS SALUD</h3>
-        <p className="small"><small class={isSecondary && 'isSecondarySmall'}>Kinda es mucho más que un sistema de turnos convencional</small></p>
+        <p className="small"><small className={isSecondary && 'isSecondarySmall'}>Kinda es mucho más que un sistema de turnos convencional</small></p>
         {children}
       </div>
     </ImgStepsContainer>
