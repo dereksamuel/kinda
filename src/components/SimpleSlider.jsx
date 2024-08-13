@@ -48,7 +48,7 @@ const SimpleSlider = () => {
     slidesToScroll: 1,
     speed: 300,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
     pauseOnHover: true,
     pauseOnFocus: true,
     pauseOnDotsHover: true,
