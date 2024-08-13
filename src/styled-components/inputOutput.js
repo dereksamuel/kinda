@@ -19,6 +19,11 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: 500;
   font-size: ${({ theme }) => theme.sizes.fontMedium};
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const InputContainer = styled.input`

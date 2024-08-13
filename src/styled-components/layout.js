@@ -46,6 +46,10 @@ export const MenuItem = styled.li`
     color: ${({ theme, $active, $variant }) => $active ? theme.colors[$variant] : theme.colors.primary};
   }
 
+  a:hover {
+    color: ${({ theme, $active, $variant }) => $active ? theme.colors[$variant] : "black"};
+  }
+
   &:last-child {
     border-right: none;
     padding-right: 0;
@@ -85,7 +89,7 @@ export const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  max-width: 1700px;
+  max-width: 100%;
   margin: 0 auto;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.secondary};
@@ -97,7 +101,7 @@ export const BlueFooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1700px;
+  max-width: 100%;
   width: 100%;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.primary};

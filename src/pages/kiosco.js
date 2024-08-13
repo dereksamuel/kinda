@@ -10,7 +10,7 @@ export default function Kiosco() {
     <>
       <MainKioscoHero />
       <Separator $left $variant="secondaryRadiant" />
-      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", alignItems: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", alignItems: "center", maxWidth: "1700px", margin: "0 auto", }}>
         <CardsKioskos />
       </div>
     </>

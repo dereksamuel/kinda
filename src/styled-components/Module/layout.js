@@ -150,6 +150,22 @@ export const CardsContainer = styled.div`
   .box:last-child {
     border-right: none;
   }
+
+  small {
+    font-size: ${({ theme }) => theme.sizes.fontMedium};
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.primary};
+    display: block;
+    color: ${({ theme }) => theme.colors.secondaryRadiant};
+    text-align: start;
+  }
+
+  .start {
+    align-items: flex-start;
+    .Title {
+      text-align: start;
+    }
+  }
 `;
 
 export const ImgStepsContainer = styled.div`
