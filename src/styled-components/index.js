@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     scroll-behavior: smooth;
     transition: all 0.3s ease;
+    line-height: 1.25;
     font-family: ${variables.theme.fonts.primary};
   }
 

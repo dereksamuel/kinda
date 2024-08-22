@@ -3,6 +3,7 @@ import styled from "styled-components";
 const chooseColorBtn = ($variant) => {
   const colors = {
     primary: "radiant",
+    "primary-white": "white",
     secondary: "black",
     white: "radiant"
   };
@@ -10,14 +11,25 @@ const chooseColorBtn = ($variant) => {
   return colors[$variant] || "radiant";
 }
 
+const chooseWeightbtn = ($variant) => {
+  const weights = {
+    primary: 500,
+    secondaryMistery: 300,
+    "primary-white": 300,
+    white: 500
+  };
+
+  return weights[$variant] || 500;
+}
+
 export const Button = styled.button`
   border: none;
-  background-color: ${({ theme, $variant }) => theme.colors[$variant]};
-  color: ${({ theme, $variant }) => theme.colors[chooseColorBtn($variant)]};
+  background-color: ${({ theme, $variant }) => theme.colors[$variant === "primary-white" ? "primary" : $variant]};
+  color: ${({ theme, $variant, $colorText }) => theme.colors[$colorText || chooseColorBtn($variant)]};
   padding: ${({ theme }) => theme.sizes.fontSmall} ${({ theme }) => theme.sizes.small};
   border-radius: 25px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: ${({ $variant }) => chooseWeightbtn($variant)};
   font-size: ${({ theme }) => theme.sizes.fontMedium};
   opacity: 0.9;
 

@@ -50,7 +50,7 @@ export const ModuleHeroContainer = styled.section`
 export const CardContainer = styled.div`
   background-color: transparent;
   width: 300px;
-  height: ${({ $rect }) => $rect ? '400px' : '300px'};
+  */height: ${({ $rect }) => $rect ? '400px' : '300px'};*/
   perspective: 1000px;
 
   .flip-card-inner {
@@ -64,56 +64,36 @@ export const CardContainer = styled.div`
     transform-style: preserve-3d;
   }
 
-  &:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
+  ul {
+    list-color: ${({ theme }) => theme.colors.secondaryMistery};
+    text-align: start;
+    font-size: ${({ theme }) => theme.sizes.fontSM};
+    color: ${({ theme }) => theme.colors.primary};
+    max-width: 260px;
+    margin: 0 auto;
+    min-height: 200px;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: ${({ $rect }) => $rect ? '0' : '50%'};
-  }
+    margin-top: ${({ theme }) => theme.sizes.small};
+    list-style-position: inside;
+    margin-bottom: ${({ theme }) => theme.sizes.small};
 
-  .flip-card-front {
-    background-color: white;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .title-ul {
+      font-weight: 600;
+      font-size: ${({ theme }) => theme.sizes.fontMedium};
+      line-height: 1;
+      margin-bottom: ${({ theme }) => theme.sizes.small};
+    }
 
-  .flip-card-back {
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: start;
-  }
+    li {
+      margin-bottom: ${({ theme }) => theme.sizes.fontSmall};
+      line-height: 1.2;
 
-  .circle {
-    width: 250px;
-    height: ${({ $rect }) => $rect ? '400px' : '250px'};
-    border-radius: ${({ $rect }) => $rect ? '0' : '50%'};
-    background-color: ${({ theme }) => theme.colors.secondary};
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: ${({ theme }) => theme.sizes.medium};
+      &.secondaryMistery::marker {
+        color: ${({ theme }) => theme.colors.secondaryMistery};
+      }
 
-    ul {
-      list-color: ${({ theme }) => theme.colors.secondaryMistery};
-      text-align: start;
-      font-size: ${({ theme }) => theme.sizes.fontSM};
-      color: ${({ theme }) => theme.colors.primary};
-      max-width: 160px;
-      margin: 0 auto;
-
-      li {
-        margin-bottom: ${({ theme }) => theme.sizes.fontSmall};
+      &.secondaryRadiant::marker {
+        color: ${({ theme }) => theme.colors.secondaryRadiant};
       }
     }
   }
@@ -122,7 +102,7 @@ export const CardContainer = styled.div`
 export const CardsContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: ${({ theme }) => theme.sizes.large} 0;
   margin-top: ${({ theme }) => theme.sizes.large};
@@ -133,8 +113,13 @@ export const CardsContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 ${({ theme }) => theme.sizes.large};
-    border-right: 2px solid ${({ theme }) => theme.colors.secondary};
+    margin: 0 ${({ theme }) => theme.sizes.large};
+    padding: ${({ theme }) => theme.sizes.small};
+    /*border-right: 2px solid ${({ theme }) => theme.colors.secondary};*/
+
+    &.gradient {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, ${({ theme }) => theme.colors.secondary} 100%);
+    }
   }
 
   .Title {
