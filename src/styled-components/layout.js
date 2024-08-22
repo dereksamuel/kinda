@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 const chooseRadiantSep = ($variant) => {
@@ -54,6 +55,25 @@ export const MenuItem = styled.li`
     border-right: none;
     padding-right: 0;
   }
+`;
+
+export const ImageNotFoundContainer = styled(Image)`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+`;
+
+export const ContainerCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: ${({ theme }) => theme.sizes.large};
 `;
 
 export const Separator = styled.div`
